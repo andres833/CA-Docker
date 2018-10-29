@@ -1,0 +1,244 @@
+docker images
+docker ps
+docker ps -a
+ls -asl /var/lib/docker/
+ls -asl /var/lib/docker/image/overlay2/
+ls -asl /var/lib/docker/image/overlay2/imagedb/content/sha256/
+docker images
+cat /var/lib/docker/image/overlay2/imagedb/content/sha256/ea4c82dcd15a33e3e9c4c37050def20476856a08e59526fbe533cc4e98387e39 
+cat /var/lib/docker/image/overlay2/imagedb/content/sha256/ea4c82dcd15a33e3e9c4c37050def20476856a08e59526fbe533cc4e98387e39 | python -m json.tool
+docker inspect ubuntu
+docker runt -it ubuntu /bin/bash
+docker run -it ubuntu /bin/bash
+docker ps -a
+docker start 8fefeffc0ae7
+docker ps
+docker attach 8fefeffc0ae7
+docker container prune
+ls -l
+mkdir dockerfile
+vim Dockerfile
+yum install vim
+vim Dockerfile
+cat Dockerfile
+vim /etc/vimrc 
+ls -l
+file hello
+echo "Hello World\!" > hello
+cat hello
+sh hello 
+vim hello 
+sh hello 
+docker images
+docker ps -a
+docker build . 
+docker images
+docker rmi 733ddcda622c
+docker images
+docker build -t greeting .
+docker images
+docker run greeting
+docker rmi 8263c611b721
+docker stop 8263c611b721
+docker images
+docker ps
+docker rmi 8263c611b721
+docker ps
+docker run greeting
+ls -l
+chmod 755 hello
+ls -l
+docker ps
+docker rmi 8263c611b721
+docker rmi 51c89c0fd358
+docker ps -a
+docker 
+docker ps -a
+docker stop goofy_villani
+docker stop cranky_yalow
+docker ps -a
+docker rmi ff37590bf2d0
+docker rm ff37590bf2d0
+docker rm 51c89c0fd358
+docker ps -a
+docker ps
+docker image
+docker ls
+docker images
+docker rmi greeting
+docker run greeting
+docker build -t greeting .
+docker run greeting
+vim hello 
+docker ps -a
+docker rm heuristic_leavitt
+docker images
+docker rmi greeting
+docker run greeting
+docker build -t greeting .
+docker run greeting
+vim hello 
+sh hello 
+vim hello 
+sh hello 
+yum install go
+sh hello 
+vim hello 
+sh hello 
+vim hello 
+mv hello hello.go
+./hello.go 
+yum install gorun
+go hello.go 
+yum install golang
+vim hello.go 
+mv hello.go hello.py
+python hello.py
+vim Dockerfile 
+./hello.py 
+docker ps -a
+docker rm 30eee3e88347
+docker images
+docker rmi greeting
+docker build -t greeting .
+docker images
+docker run greeting
+docker-compose up --build
+cat Dockerfile 
+vim Dockerfile 
+mv hello.py hello
+sh hello 
+./hello 
+docker ps a
+docker ps -a
+docker rm 7c7f0e657c1b
+docker images
+docker rmi greeting
+docker build -t greeting .
+docker run greeting
+yum search standard_init_linux.go
+yum search standard_init_linux
+vim hello 
+go run hello 
+./hello 
+mv hello hello.go
+go build hello.go
+ls -l
+ls -la
+ls -lah
+./hello
+rm hello
+vim hello.go 
+go build hello.go
+vim Dockerfile 
+docker ps a
+docker ps -a
+docker rm d3424bd95dd0
+docker images
+docker rmi greeting
+docker build -t greeting .
+docker run greeting
+docker ps -a
+docker container prune
+docker run -it ubuntu /bin/bash
+docker ps -a
+docker commit ab0d11c017da ubuntu_python
+docker run ubuntu_python
+docker ps -a
+docker rm db843fa27289
+docker images
+docker rmi 7d26b8de66c3
+docker ps -a
+docker commit --change='CMD ["python", "-c", "import this"]' ab0d11c017da ubuntu_python
+docker images
+docker run ubuntu_python
+docker ps -a
+ls -l
+vim webapp.go
+go build webapp.go 
+ls -l
+mkdir app1 
+cp Dockerfile app1/
+mv hello* app1/
+ls -l
+ls dockerfile/
+mkdir app2
+mv Dockerfile app2/
+mv webapp* app2/
+ls -l
+cd app2/
+ls -l
+vim Dockerfile 
+docker build -t "webapp" .
+docker run webapp
+docker ps -a
+docker run -d webapp
+docker ps -a
+docker container prune
+docker ps -a
+docker images
+docker rmi 1d96028e2804
+docker images
+docker build -t "webapp1" .
+docker ps -a
+docker run -d webapp1
+docker ps -a
+docker run -d webapp1
+docker ps -a
+ls -l
+vim Dockerfile 
+cat Dockerfile
+docker container prune
+docker images
+docker rmi webapp1
+docker images
+docker build -t "webapp1" .
+docker images
+docker run webapp1
+ls -l
+docker ps -a
+docker run -d webapp1
+docker ps -a
+vim webapp.go 
+rm webapp
+env GOARCH=386 GOOS=linux go build webapp.go
+docker container prune
+docker images 
+docker rmi webapp1
+docker build -t "webapp1" .
+docker images
+docker run webapp1
+docker run -d webapp1
+docker ps -a
+ifcon
+ip a
+docker ps -a
+docker inspect b40e71270142
+curl 172.17.0.2:8080
+docker ps -a
+docker stop b40e71270142
+docker container prune
+docker run -d -P webapp1
+docker ps -a
+curl 172.17.0.2:32768
+curl localhost:32768
+yum install lynx
+curl localhost:32768
+lynx localhost:32768
+docker run -d -P webapp1
+docker ps -a
+docker stop b7ebee18e70b
+docker stop 09a9279a191b
+docker container prune
+docker run -d -p 3000:8080 webapp1
+docker ps -a
+curl localhots:3000
+curl localhot:3000
+curl localhots:3000
+curl 127.0.0.1:3000
+docker run -d -p 3000:8080 webapp1
+docker ps -a
+docker stop 38c2a30d4762
+docker start 955cd56a914d
+docker ps -a
+docker

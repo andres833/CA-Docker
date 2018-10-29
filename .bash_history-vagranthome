@@ -1,0 +1,33 @@
+sudo yum install yum-utils yum-config-manager device-mapper lvm2
+yum-config-manager 
+cat /proc/version 
+sudo yum remove docker docker-common docker-selinux docker-engine
+sudo yum install yum-utils yum-config-manager device-mapper lvm2 device-mapper-persistent-data
+sudo yum remove docker                   docker-client                   docker-client-latest                   docker-common                   docker-latest                   docker-latest-logrotate                   docker-logrotate                   docker-selinux                   docker-engine-selinux                   docker-engine
+sudo yum install -y yum-utils   device-mapper-persistent-data   lvm2
+sudo yum-config-manager     --add-repo     https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install docker-ce
+sudo systemctl start docker
+sudo systemctl status docker
+sudo docker run hello-world
+sudo docker run -it ubntun /bin/bash
+docker login 
+sudo docker login 
+sudo docker run -it ubntun /bin/bash
+sudo docker login 
+sudo docker run -it ubntun /bin/bash
+sudo docker run -it ubuntu /bin/bash
+sudo docker pull ubuntu
+sudo docker run -it ubuntu /bin/bash
+ls -asl /bin
+sudo ls -asl /bin
+ps
+sudo su -l
+sudo docker container prune
+sudo docker images
+sudo su -l
+sudo docker ps
+sudo su -l
+sudo systemctl status docker
+sudo systemctl start docker
+sudo systemctl status docker
